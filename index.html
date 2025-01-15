@@ -8,98 +8,80 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav>
-      <div>
+    <nav class="navbar">
+      <div class="navbar__contact">
         <a href="mailto:dev@johnsmith.nl">dev@johnsmith.nl</a>
-        <button type="button" onclick="">CV</button>
+        <button type="button" class="navbar__button">CV</button>
       </div>
-      <div>
-        <ul>
-          <li>Linkedin</li>
-          <li>Github</li>
-          <li>Instagram</li>
-        </ul>
-      </div>
+      <ul class="navbar__links">
+        <li class="navbar__link">LinkedIn</li>
+        <li class="navbar__link">GitHub</li>
+        <li class="navbar__link">Instagram</li>
+      </ul>
     </nav>
-    <section>
-      <div>
-        <div>
+
+    <section class="hero">
+      <div class="hero__container">
+        <div class="hero__image">
           <img src="./author-img.png" alt="author" />
-          <div>
-            <img src="wave.png" alt="wave" />
-            <p>John smith</p>
-          </div>
-          <h1>Building digital product, brands,and experience</h1>
-          <button type="button">Contact Me</button>
+        </div>
+        <div class="hero__info">
+          <img src="wave.png" alt="wave" class="hero__icon" />
+          <p class="hero__author-name">John Smith</p>
+          <h1 class="hero__title">
+            Building digital products, brands, and experiences
+          </h1>
+          <button type="button" class="hero__button">Contact Me</button>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="adobe.png" alt="adobe" />
-        <img src="adobe.png" alt="adobe" />
-        <img src="adobe.png" alt="adobe" />
-        <img src="adobe.png" alt="adobe" />
-        <img src="adobe.png" alt="adobe" />
-        <img src="adobe.png" alt="adobe" />
+
+    <section class="brands">
+      <div class="brands__container">
+        <img src="adobe.png" alt="Adobe" class="brands__image" />
+        <img src="adobe.png" alt="Adobe" class="brands__image" />
+        <img src="adobe.png" alt="Adobe" class="brands__image" />
       </div>
     </section>
-    <section>
-      <div>
-        <h2>
+
+    <section class="features">
+      <div class="features__container">
+        <h2 class="features__title">
           Collaborate with brands and agencies to create impactful results.
         </h2>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="" alt="line" />
-        <button type="button">Services</button>
+
+    <section class="services">
+      <div class="services__header">
+        <img src="" alt="line" class="services__line" />
+        <button type="button" class="services__button">Services</button>
       </div>
-      <div>
-        <div>
-          <img src="icon" alt="icon" />
-          <h3>UI & UX</h3>
-          <p>
-            Designing interfaces that are intutive, efficient, and enjoyable to
-            use
-          </p>
-        </div>
-        <div>
-          <img src="icon" alt="icon" />
-          <h3>UI & UX</h3>
-          <p>
-            Designing interfaces that are intutive, efficient, and enjoyable to
-            use
-          </p>
-        </div>
-        <div>
-          <img src="icon" alt="icon" />
-          <h3>UI & UX</h3>
-          <p>
-            Designing interfaces that are intutive, efficient, and enjoyable to
-            use
-          </p>
-        </div>
-        <div>
-          <img src="icon" alt="icon" />
-          <h3>UI & UX</h3>
-          <p>
-            Designing interfaces that are intutive, efficient, and enjoyable to
+      <div class="services__list">
+        <div class="services__item">
+          <img src="icon" alt="icon" class="services__icon" />
+          <h3 class="services__title">UI & UX</h3>
+          <p class="services__description">
+            Designing interfaces that are intuitive, efficient, and enjoyable to
             use
           </p>
         </div>
       </div>
     </section>
-    <section>
-      <div>
-        <img src="hand-shake" alt="hand-shake" />
-        <h4>Tell me about your next project</h4>
-        <form action="./form.html" method="post">
-          <input type="submit" />This is a form
+
+    <section class="contact">
+      <div class="contact__container">
+        <img src="hand-shake" alt="Handshake" class="contact__image" />
+        <h4 class="contact__title">Tell me about your next project</h4>
+        <form action="./form.html" method="post" class="contact__form">
+          <input type="submit" class="contact__submit" value="Submit" />
         </form>
       </div>
     </section>
+
+    <footer class="footer">
+      <p class="footer__text">Made with love in NL 2025</p>
+    </footer>
     <script src="./script.js"></script>
   </body>
 </html>
