@@ -69,13 +69,22 @@
             <img src="assets/images/meta-svgrepo-com.svg" alt="Meta" />
           </div>
           <div class="brands__image">
-            <img src="assets/images/starbucks-svgrepo-com.svg" alt="Starbucks" />
+            <img
+              src="assets/images/starbucks-svgrepo-com.svg"
+              alt="Starbucks"
+            />
           </div>
           <div class="brands__image">
-            <img src="assets/images/adobe-44195-logo-svgrepo-com.svg" alt="Adobe" />
+            <img
+              src="assets/images/adobe-44195-logo-svgrepo-com.svg"
+              alt="Adobe"
+            />
           </div>
           <div class="brands__image">
-            <img src="assets/images/soundcloud-logo-svgrepo-com.svg" alt="soundcloud" />
+            <img
+              src="assets/images/soundcloud-logo-svgrepo-com.svg"
+              alt="soundcloud"
+            />
           </div>
         </div>
       </div>
@@ -90,25 +99,80 @@
     </section>
 
     <section class="services">
-      <div class="services__header">
-        <img src="" alt="line" class="services__line" />
-        <button type="button" class="services__button">Services</button>
-      </div>
-      <div class="services__list">
-        <div class="services__item">
-          <img src="icon" alt="icon" class="services__icon" />
-          <h3 class="services__title">UI & UX</h3>
-          <p class="services__description">
-            Designing interfaces that are intuitive, efficient, and enjoyable to
-            use
-          </p>
+      <div class="services__container">
+        <div class="services__header">
+          <div class="services__line"></div>
+          <button type="button" class="services__button button--primary">
+            Services
+          </button>
+        </div>
+        <div class="services__list">
+          <div class="services__item">
+            <div class="services__image">
+              <img
+                src="./assets/images/ui-ux.svg"
+                alt="ui-ux"
+                class="services__icon"
+              />
+            </div>
+            <h3 class="services__title">UI/UX Design</h3>
+            <p class="services__description">
+              Creating intuitive, efficient, and enjoyable interfaces that
+              enhance user experiences.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__image">
+              <img
+                src="./assets/images/mobile.svg"
+                alt="ui-ux"
+                class="services__icon"
+              />
+            </div>
+            <h3 class="services__title">Web & Mobile Apps</h3>
+            <p class="services__description">
+              Transforming ideas into expressive and impactful web and mobile
+              applications.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__image">
+              <img
+                src="./assets/images/design.svg"
+                alt="ui-ux"
+                class="services__icon"
+              />
+            </div>
+            <h3 class="services__title">Design & Creativity</h3>
+            <p class="services__description">
+              Crafting visually stunning designs that resonate with your
+              audience.
+            </p>
+          </div>
+          <div class="services__item">
+            <div class="services__image">
+              <img
+                src="./assets/images/development-icon.svg"
+                alt="ui-ux"
+                class="services__icon"
+              />
+            </div>
+            <h3 class="services__title">Development</h3>
+            <p class="services__description">
+              Bringing your vision to life using cutting-edge technologies and
+              design trends.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="contact">
       <div class="contact__container">
-        <img src="hand-shake" alt="Handshake" class="contact__image" />
+        <div class="contact__container__image">
+
+          <img src="./assets/images/handshake.svg" alt="Handshake" class="contact__image" />
+        </div>
         <h4 class="contact__title">Tell me about your next project</h4>
         <form action="./form.html" method="post" class="contact__form">
           <input type="submit" class="contact__submit" value="Submit" />
