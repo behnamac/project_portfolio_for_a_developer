@@ -20,7 +20,7 @@ To maintain a well-structured and maintainable project, I used the **BEM (Block 
 ### Installation  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/yourusername/developer_portfolio.git  
+   git clone https://github.com/behnamac/project_portfolio_for_a_developer  
 
 2. Navigate to the project directory:
    ```bash
