@@ -170,18 +170,53 @@
     <section class="contact">
       <div class="contact__container">
         <div class="contact__container__image">
-
-          <img src="./assets/images/handshake.svg" alt="Handshake" class="contact__image" />
+          <img
+            src="./assets/images/handshake.svg"
+            alt="Handshake"
+            class="Handshake-icon"
+          />
         </div>
         <h4 class="contact__title">Tell me about your next project</h4>
         <form action="./form.html" method="post" class="contact__form">
-          <input type="submit" class="contact__submit" value="Submit" />
+          <label for="name">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Tell me your name"
+            required
+            minlength="3"
+            maxlength="40"
+            class="contact__imput"
+          />
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Tell me your email"
+            required
+            class="contact__imput"
+          />
+          <label for="message">Message</label>
+          <textarea
+            name="message"
+            id="message"
+            required
+            placeholder="What's in your mind?"
+            class="contact__textarea"
+          ></textarea>
+          <input
+            type="submit"
+            class="contact__submit button--primary"
+            value="Submit"            
+          />
         </form>
       </div>
     </section>
 
     <footer class="footer">
-      <p class="footer__text">Made with love in NL 2025</p>
+      <p class="footer__text">Made with <span>♥</span> in NL 2025</p>
     </footer>
     <script src="./script.js"></script>
   </body>

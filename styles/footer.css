@@ -4,4 +4,10 @@
     width: 100%;
     max-width: 2000px;
     margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+}
+.footer__text span{
+    color:red;
 }
