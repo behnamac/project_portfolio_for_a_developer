@@ -1,32 +1,25 @@
 .services {
   display: flex;
-  width: 100%;
+  width: var(--full);
 }
 .services__container {
   background-color: var(--color-bg);
   padding: 1.5rem;
-  display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  width: 100%;
-  margin: auto;
-  min-width: 324px;
-  max-width: 2000px;
+  width: var(--full);
 }
 .services__header {
   position: relative;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 70%;
   margin: 1rem auto;
   height: 50px;
 }
 .services__line {
   background-color: var(--color-black);
-  width: 100%;
+  width: var(--full);
   height: 1px;
 }
 .services__button {
@@ -45,27 +38,23 @@
 .services__item {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 100%;
+  gap: 5px;
+  width: var(--full);
+  height: var(--full);
 }
-.services__title{
-font-size: 1rem;
+.services__title {
+  font-size: 1rem;
 }
-.services__description{
-    font-size: 0.8rem;
+.services__description {
+  font-size: 0.8rem;
 }
 .services__image {
   width: 40px;
   height: 40px;
 }
-.services__image img {
-  width: 100%;
-  height: 100%;
-}
+
 /* Media Queries  tablet */
 @media (min-width: 768px) {
-  .services__container {
-  }
   .features__title {
     width: 60%;
     font-size: 1.5rem;
@@ -75,8 +64,6 @@ font-size: 1rem;
 /* Media Queries  desktop */
 
 @media (min-width: 1024px) {
-  .services__container {
-  }
   .features__title {
     width: 50%;
     font-size: 2rem;
