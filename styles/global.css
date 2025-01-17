@@ -1,0 +1,71 @@
+/* global base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --font-base: "Montserrat", serif;
+    --font-alt: "Roboto", serif;
+  
+    --color-golden: #dcca87;
+    --color-black: #242424;
+    --color-gray: #545454;
+    --color-bg: #eeeeec;
+    --color-grey: #aaaaaa;
+    --color-white: #ffffff;
+  }
+  
+  html {
+    font-size: 16px;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-base);
+    color: var(--color-black);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .button--primary {
+    border: none;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-white);
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    font-family: var(--font-alt);
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-wrap: nowrap;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-weight: 600;
+  }
+  a:focus,
+  button:focus {
+    outline: 2px solid var(--color-black);
+    outline-offset: 2px;
+  }
+  
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
