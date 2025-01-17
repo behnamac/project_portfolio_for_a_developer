@@ -10,33 +10,42 @@
     <title>Portfolio</title>
   </head>
   <body>
-    <nav class="navbar">
+    <nav class="navbar u-section">
       <div class="navbar__container">
         <div class="navbar__contact">
           <a href="mailto:dev@johnsmith.nl">dev@johnsmith.nl</a>
           <button type="button" class="button--primary">CV</button>
         </div>
         <ul class="navbar__links">
-          <a href="" class="navbar__link"><li>LinkedIn</li></a>
-          <a href="" class="navbar__link"><li>GitHub</li></a>
-          <a href="" class="navbar__link"><li>Instagram</li></a>
+          <a href="#brands" class="navbar__link"><li>Brands</li></a>
+          <span>/</span>
+          <a href="#services" class="navbar__link"><li>Services</li></a>
+          <span>/</span>
+          <a href="#contact" class="navbar__link"><li>Contact</li></a>
         </ul>
-        <button class="navbar__hamburger" id="hamburger">☰</button>
+        <button class="navbar__hamburger" id="hamburger" aria-label="Open menu">
+          ☰
+        </button>
       </div>
     </nav>
 
     <section class="hero">
-      <div class="hero__container">
+      <div class="hero__container u-section flex-center">
         <div class="hero__image__container">
           <div class="hero__image">
-            <img src="assets/images/developerAvatar.jpg" alt="author" />
+            <img
+              src="assets/images/developer-avatar.jpg"
+              alt="author"
+              class="u-image"
+              alt="John Smith Avatar"
+            />
           </div>
           <div class="hero__author__container button--primary">
             <p class="hero__author-name">John Smith</p>
             <p>👋</p>
           </div>
         </div>
-        <div class="hero__info">
+        <div class="hero__info flex-center">
           <h1 class="hero__title">
             Building digital products, brands, and experiences.
           </h1>
@@ -47,43 +56,56 @@
       </div>
     </section>
 
-    <section class="brands">
-      <div class="brands__container">
-        <div class="brands__images">
-          <div class="brands__image">
-            <img src="assets/images/amazon-svgrepo-com.svg" alt="Adobe" />
-          </div>
+    <section class="brands" id="brands">
+      <div class="brands__container flex-center u-section">
+        <div class="brands__images flex-center">
           <div class="brands__image">
             <img
-              src="assets/images/coca-cola-logo-svgrepo-com.svg"
+              src="assets/images/amazon-logo.svg"
               alt="Adobe"
+              class="u-image"
             />
           </div>
           <div class="brands__image">
             <img
-              src="assets/images/mcdonald-s-15-logo-svgrepo-com.svg"
+              src="assets/images/coca-cola-logo.svg"
+              alt="Cocacola"
+              class="u-image"
+            />
+          </div>
+          <div class="brands__image">
+            <img
+              src="assets/images/mcdonald-logo.svg"
+              alt="mcdonald"
+              class="u-image"
+            />
+          </div>
+          <div class="brands__image">
+            <img
+              src="assets/images/meta-logo.svg"
+              alt="meta-logo"
+              class="u-image"
+            />
+          </div>
+          <div class="brands__image">
+            <img
+              src="assets/images/starbucks-logo.svg"
+              alt="starbucks-logo"
+              class="u-image"
+            />
+          </div>
+          <div class="brands__image">
+            <img
+              src="assets/images/adobe-logo.svg"
               alt="Adobe"
-            />
-          </div>
-          <div class="brands__image">
-            <img src="assets/images/meta-svgrepo-com.svg" alt="Meta" />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/starbucks-svgrepo-com.svg"
-              alt="Starbucks"
+              class="u-image"
             />
           </div>
           <div class="brands__image">
             <img
-              src="assets/images/adobe-44195-logo-svgrepo-com.svg"
-              alt="Adobe"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/soundcloud-logo-svgrepo-com.svg"
-              alt="soundcloud"
+              src="assets/images/soundcloud-logo.svg"
+              alt="soundcloud-logo"
+              class="u-image"
             />
           </div>
         </div>
@@ -91,28 +113,28 @@
     </section>
 
     <section class="features">
-      <div class="features__container">
+      <div class="features__container flex-center">
         <h2 class="features__title">
           Collaborate with brands and agencies to create impactful results.
         </h2>
       </div>
     </section>
 
-    <section class="services">
-      <div class="services__container">
-        <div class="services__header">
+    <section class="services" id="services">
+      <div class="services__container u-section">
+        <div class="services__header flex-center">
           <div class="services__line"></div>
-          <button type="button" class="services__button button--primary">
+          <div type="button" class="services__button button--primary">
             Services
-          </button>
+          </div>
         </div>
         <div class="services__list">
           <div class="services__item">
             <div class="services__image">
               <img
-                src="./assets/images/ui-ux.svg"
+                src="./assets/images/ui-ux-icon.svg"
                 alt="ui-ux"
-                class="services__icon"
+                class="u-image"
               />
             </div>
             <h3 class="services__title">UI/UX Design</h3>
@@ -124,9 +146,9 @@
           <div class="services__item">
             <div class="services__image">
               <img
-                src="./assets/images/mobile.svg"
-                alt="ui-ux"
-                class="services__icon"
+                src="./assets/images/mobile-icon.svg"
+                alt="mobile-icon"
+                class="u-image"
               />
             </div>
             <h3 class="services__title">Web & Mobile Apps</h3>
@@ -138,9 +160,9 @@
           <div class="services__item">
             <div class="services__image">
               <img
-                src="./assets/images/design.svg"
-                alt="ui-ux"
-                class="services__icon"
+                src="./assets/images/design-icon.svg"
+                alt="design-icon"
+                class="u-image"
               />
             </div>
             <h3 class="services__title">Design & Creativity</h3>
@@ -153,8 +175,8 @@
             <div class="services__image">
               <img
                 src="./assets/images/development-icon.svg"
-                alt="ui-ux"
-                class="services__icon"
+                alt="development-icon"
+                class="u-image"
               />
             </div>
             <h3 class="services__title">Development</h3>
@@ -167,13 +189,14 @@
       </div>
     </section>
 
-    <section class="contact">
-      <div class="contact__container">
+    <section class="contact u-section" id="contact">
+      <div class="contact__container flex-center">
         <div class="contact__container__image">
           <img
-            src="./assets/images/handshake.svg"
-            alt="Handshake"
+            src="./assets/images/handshake-icon.svg"
+            alt="handshake-icon"
             class="Handshake-icon"
+            class="u-image"
           />
         </div>
         <h4 class="contact__title">Tell me about your next project</h4>
@@ -209,13 +232,13 @@
           <input
             type="submit"
             class="contact__submit button--primary"
-            value="Submit"            
+            value="Submit"
           />
         </form>
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer u-section">
       <p class="footer__text">Made with <span>♥</span> in NL 2025</p>
     </footer>
     <script src="./script.js"></script>
