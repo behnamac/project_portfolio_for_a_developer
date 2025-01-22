@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="John Smith's Portfolio - Web Developer and Designer specializing in digital products, brands and experiences"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+
     <title>Portfolio</title>
   </head>
   <body>
@@ -184,7 +196,12 @@
           class="u-image contact__container__image"
         />
         <h4 class="contact__title">Tell me about your next project</h4>
-        <form action="./form.html" method="post" class="contact__form">
+        <form
+          action="./form.html"
+          method="post"
+          class="contact__form"
+          id="contact"
+        >
           <label for="name">Your Name</label>
           <input
             type="text"
@@ -214,10 +231,13 @@
             class="contact__textarea"
           ></textarea>
           <input
-            type="submit"
-            class="contact__submit button--primary"
-            value="Submit"
+          type="submit"
+          class="contact__submit button--primary"
+          value="Submit"
           />
+          <div id="contact__message">
+            <p>Your message successfully sent! :D</p>
+          </div>
         </form>
       </div>
     </section>
@@ -226,6 +246,7 @@
     <footer class="footer u-section">
       <p class="footer__text">Made with <span>♥</span> in NL 2025</p>
     </footer>
-    <script type="module" src="main.js"></script>
+    <button class="scroll__to__top" id="scrollTop">↑</button>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
