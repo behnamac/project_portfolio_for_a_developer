@@ -12,18 +12,27 @@
 }
 .brands__images {
   flex-wrap: nowrap;
-  overflow-y: auto;
   overflow-x: auto;
   overflow-y: hidden;
   gap: 1rem;
   width: 100%;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-  scrollbar-width: none;  
+  scrollbar-width: none;
 }
 .brands__image {
   flex: 0 0 auto;
   width: 150px;
   height: 80px;
   overflow: hidden;
+  object-fit: contain;
+}
+.brands__image:hover {
+  transform: scale(1.05);
+  transition: transform 0.6s ease;
+}
+@media (max-width: 768px) {
+  .brands__container {
+    height: 20vh;
+  }
 }

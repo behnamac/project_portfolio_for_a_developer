@@ -16,6 +16,7 @@
   --color-bg: #eeeeec;
   --color-grey: #aaaaaa;
   --color-white: #ffffff;
+  --color-green:#2ecc71;
 
   --radius-top: 100px 100px 0 0;
   --radius-bottom: 0 0 100px 100px;
@@ -77,11 +78,11 @@ a {
   color: var(--color-black);
   font-weight: 600;
 }
-a:focus,
-button:focus {
+:focus-visible {
   outline: 2px solid var(--color-black);
   outline-offset: 2px;
 }
+
 
 a:hover,
 button:hover {
