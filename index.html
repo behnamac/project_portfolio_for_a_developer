@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="John Smith's Portfolio - Web Developer and Designer specializing in digital products, brands and experiences"
+    />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+      crossorigin="anonymous"
+    />
+
     <title>Portfolio</title>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar u-section">
       <div class="navbar__container">
         <div class="navbar__contact">
@@ -27,19 +40,25 @@
           ☰
         </button>
       </div>
+      <div class="navbar__burger__menu flex-center" id="navbar__burger__menu">
+        <button class="burger__menu__button" id="closeBtn">🗙</button>
+        <ul class="navbar__burger__links">
+          <li><a href="#brands" class="navbar__burger__link">Brands</a></li>
+          <li><a href="#services" class="navbar__burger__link">Services</a></li>
+          <li><a href="#contact" class="navbar__burger__link">Contact</a></li>
+        </ul>
+      </div>
     </nav>
 
+    <!-- Hero Section -->
     <section class="hero">
       <div class="hero__container u-section flex-center">
         <div class="hero__image__container">
-          <div class="hero__image">
-            <img
-              src="assets/images/developer-avatar.jpg"
-              alt="author"
-              class="u-image"
-              alt="John Smith Avatar"
-            />
-          </div>
+          <img
+            src="assets/images/developer-avatar.jpg"
+            alt="John Smith Avatar"
+            class="u-image hero__image"
+          />
           <div class="hero__author__container button--primary">
             <p class="hero__author-name">John Smith</p>
             <p>👋</p>
@@ -56,62 +75,50 @@
       </div>
     </section>
 
+    <!-- Brands Section -->
     <section class="brands" id="brands">
       <div class="brands__container flex-center u-section">
         <div class="brands__images flex-center">
-          <div class="brands__image">
-            <img
-              src="assets/images/amazon-logo.svg"
-              alt="Adobe"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/coca-cola-logo.svg"
-              alt="Cocacola"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/mcdonald-logo.svg"
-              alt="mcdonald"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/meta-logo.svg"
-              alt="meta-logo"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/starbucks-logo.svg"
-              alt="starbucks-logo"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/adobe-logo.svg"
-              alt="Adobe"
-              class="u-image"
-            />
-          </div>
-          <div class="brands__image">
-            <img
-              src="assets/images/soundcloud-logo.svg"
-              alt="soundcloud-logo"
-              class="u-image"
-            />
-          </div>
+          <img
+            src="assets/images/amazon-logo.svg"
+            alt="Amazon"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/coca-cola-logo.svg"
+            alt="Coca-Cola"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/mcdonald-logo.svg"
+            alt="McDonald's"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/meta-logo.svg"
+            alt="Meta"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/starbucks-logo.svg"
+            alt="Starbucks"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/adobe-logo.svg"
+            alt="Adobe"
+            class="u-image brands__image"
+          />
+          <img
+            src="assets/images/soundcloud-logo.svg"
+            alt="SoundCloud"
+            class="u-image brands__image"
+          />
         </div>
       </div>
     </section>
 
+    <!-- Features Section -->
     <section class="features">
       <div class="features__container flex-center">
         <h2 class="features__title">
@@ -120,23 +127,20 @@
       </div>
     </section>
 
+    <!-- Services Section -->
     <section class="services" id="services">
       <div class="services__container u-section">
         <div class="services__header flex-center">
           <div class="services__line"></div>
-          <div type="button" class="services__button button--primary">
-            Services
-          </div>
+          <div class="services__button button--primary">Services</div>
         </div>
         <div class="services__list">
           <div class="services__item">
-            <div class="services__image">
-              <img
-                src="./assets/images/ui-ux-icon.svg"
-                alt="ui-ux"
-                class="u-image"
-              />
-            </div>
+            <img
+              src="./assets/images/ui-ux-icon.svg"
+              alt="UI/UX"
+              class="u-image services__image"
+            />
             <h3 class="services__title">UI/UX Design</h3>
             <p class="services__description">
               Creating intuitive, efficient, and enjoyable interfaces that
@@ -144,13 +148,11 @@
             </p>
           </div>
           <div class="services__item">
-            <div class="services__image">
-              <img
-                src="./assets/images/mobile-icon.svg"
-                alt="mobile-icon"
-                class="u-image"
-              />
-            </div>
+            <img
+              src="./assets/images/mobile-icon.svg"
+              alt="Mobile Apps"
+              class="u-image services__image"
+            />
             <h3 class="services__title">Web & Mobile Apps</h3>
             <p class="services__description">
               Transforming ideas into expressive and impactful web and mobile
@@ -158,13 +160,11 @@
             </p>
           </div>
           <div class="services__item">
-            <div class="services__image">
-              <img
-                src="./assets/images/design-icon.svg"
-                alt="design-icon"
-                class="u-image"
-              />
-            </div>
+            <img
+              src="./assets/images/design-icon.svg"
+              alt="Design"
+              class="u-image services__image"
+            />
             <h3 class="services__title">Design & Creativity</h3>
             <p class="services__description">
               Crafting visually stunning designs that resonate with your
@@ -172,13 +172,11 @@
             </p>
           </div>
           <div class="services__item">
-            <div class="services__image">
-              <img
-                src="./assets/images/development-icon.svg"
-                alt="development-icon"
-                class="u-image"
-              />
-            </div>
+            <img
+              src="./assets/images/development-icon.svg"
+              alt="Development"
+              class="u-image services__image"
+            />
             <h3 class="services__title">Development</h3>
             <p class="services__description">
               Bringing your vision to life using cutting-edge technologies and
@@ -189,18 +187,21 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact u-section" id="contact">
       <div class="contact__container flex-center">
-        <div class="contact__container__image">
-          <img
-            src="./assets/images/handshake-icon.svg"
-            alt="handshake-icon"
-            class="Handshake-icon"
-            class="u-image"
-          />
-        </div>
+        <img
+          src="./assets/images/handshake-icon.svg"
+          alt="Handshake"
+          class="u-image contact__container__image"
+        />
         <h4 class="contact__title">Tell me about your next project</h4>
-        <form action="./form.html" method="post" class="contact__form">
+        <form
+          action="./form.html"
+          method="post"
+          class="contact__form"
+          id="contact"
+        >
           <label for="name">Your Name</label>
           <input
             type="text"
@@ -210,7 +211,7 @@
             required
             minlength="3"
             maxlength="40"
-            class="contact__imput"
+            class="contact__input"
           />
           <label for="email">Email</label>
           <input
@@ -219,28 +220,33 @@
             id="email"
             placeholder="Tell me your email"
             required
-            class="contact__imput"
+            class="contact__input"
           />
           <label for="message">Message</label>
           <textarea
             name="message"
             id="message"
             required
-            placeholder="What's in your mind?"
+            placeholder="What's on your mind?"
             class="contact__textarea"
           ></textarea>
           <input
-            type="submit"
-            class="contact__submit button--primary"
-            value="Submit"
+          type="submit"
+          class="contact__submit button--primary"
+          value="Submit"
           />
+          <div id="contact__message">
+            <p>Your message successfully sent! :D</p>
+          </div>
         </form>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer u-section">
       <p class="footer__text">Made with <span>♥</span> in NL 2025</p>
     </footer>
-    <script src="./script.js"></script>
+    <button class="scroll__to__top" id="scrollTop">↑</button>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
